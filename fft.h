@@ -7,7 +7,7 @@ static int n;
 int l=0,r[MAXN];
 void init(){
 	for(;n;n>>=1)l++;
-    n=1<<l;
+	n=1<<l;
 	for(int i=0;i<n;i++)r[i]=(r[i>>1]>>1)|((i&1)<<(l-1));
 }
 struct complex{
